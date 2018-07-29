@@ -7,7 +7,7 @@ in IEEE Intelligent Vehicle Symposium. IEEE, 2017, pp. 154-159. [Preprint](http:
 -----
 temporal_opt.m
 
-simulates the three sceanarios in the paper
+simulates the three scenarios in the paper
 
 -----
 speed_iter.m
