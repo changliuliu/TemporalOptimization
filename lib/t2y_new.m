@@ -42,10 +42,10 @@ for i=1:nstep
     if i > 2
         f(3) = 6*(t(i-1)*t(i-2)*(t(i-1)+t(i-2))*dp_long(i) - (t(i)+2*t(i-1)+t(i-2))*t(i)*t(i-2)*dp_long(i-1) ...
             +t(i)*t(i-1)*(t(i)+t(i-1))*dp_long(i-2));
-        h(3) = t(i)*t(i-1)*t(i-2)*(t(i)+t(i-1))*(t(i)+t(i-1)+t(i-2));
+        h(3) = t(i)*t(i-1)*t(i-2)*(t(i)+t(i-1))*(t(i-1)+t(i-2))*(t(i)+t(i-1)+t(i-2));
         f(4) = 6*(t(i-1)*t(i-2)*(t(i-1)+t(i-2))*dp_lat(i) - (t(i)+2*t(i-1)+t(i-2))*t(i)*t(i-2)*dp_lat(i-1) ...
             +t(i)*t(i-1)*(t(i)+t(i-1))*dp_lat(i-2));
-        h(4) = t(i)*t(i-1)*t(i-2)*(t(i)+t(i-1))*(t(i)+t(i-1)+t(i-2));
+        h(4) = t(i)*t(i-1)*t(i-2)*(t(i)+t(i-1))*(t(i-1)+t(i-2))*(t(i)+t(i-1)+t(i-2));
         
         
         
@@ -66,10 +66,10 @@ for i=1:nstep
         else
             f(3) = 6*(t(i-1)*t0*(t(i-1)+t0)*dp_long(i) - (t(i)+2*t(i-1)+t0)*t(i)*t0*dp_long(i-1) ...
                 +t(i)*t(i-1)*(t(i)+t(i-1))*v0(1)*t0);
-            h(3) = t(i)*t(i-1)*t0*(t(i)+t(i-1))*(t(i)+t(i-1)+t0);
+            h(3) = t(i)*t(i-1)*t0*(t(i)+t(i-1))*(t(i-1)+t0)*(t(i)+t(i-1)+t0);
             f(4) = 6*(t(i-1)*t0*(t(i-1)+t0)*dp_lat(i) - (t(i)+2*t(i-1)+t0)*t(i)*t0*dp_lat(i-1) ...
                 +t(i)*t(i-1)*(t(i)+t(i-1))*v0(2)*t0);
-            h(4) = t(i)*t(i-1)*t0*(t(i)+t(i-1))*(t(i)+t(i-1)+t0);
+            h(4) = t(i)*t(i-1)*t0*(t(i)+t(i-1))*(t(i-1)+t0)*(t(i)+t(i-1)+t0);
             
             
         end
